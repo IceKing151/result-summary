@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "CustomFont";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    font-family: "CustomFont" , sans-serif;
+}
+#Purple-Card{
+    background-image:  linear-gradient(rgb(102 66 254), rgb(82 57 245), rgb(52 46 234));
+    width: 260px;
+    min-height: 350px;
+    border-radius: 20px;
+    text-align: center;
+}
+#White-Card{
+    background-color: rgba(255, 255, 255, 1);
+    width: 280px;
+    min-height: 350px;
+    border-radius: 20px;
+    z-index: -1;
+    margin-left: -30px;
+}
+.Cards-Flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#Reaction-Card{
+    background-color: rgb(255 246 245);
+    width: 210px;
+    min-height: 35px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#Memory-Card{
+    background-color: rgb(255 251 242);
+    width: 210px;
+    min-height: 35px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#Verbal-Card{
+    background-color: rgb(242 251 250);
+    width: 210px;
+    min-height: 35px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#Visual-Card{
+    background-color: rgb(243 243 253);
+    width: 210px;
+    min-height: 35px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+#Summary-text{
+    margin-left: 50px;
+}
+.White-text{
+    color: white;
+}
+.grey-text{
+    color: rgb(174 175 253);
+}
+.Reaction-ml{
+    margin-left: 40px;
+}
+.Visual-ml{
+    margin-left: 60px;
+}
+.Memory-ml{
+    margin-left: 44px;
+}
+.Verbal-ml{
+    margin-left: 55px;
+}
+#black-button{
+    background-color: rgb(48 59 89);
+    width: 200px;
+    min-height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-left: 55px;
+    color: white;
+    margin-top: 3vh;
+}
+.txt-76{
+    font-size: 50px;    
+}
+.percentage{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-image: radial-gradient(circle, rgb(73, 37, 207), rgb(70, 51, 237));
+    margin-inline: auto;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:400px) {
+    .Cards-Flex{
+        flex-direction: column;
+    }
+    #White-Card{
+        max-width: 260px;
+        margin-left: 40px;
+    }
+    #Purple-Card{
+        margin-inline: auto;
+    }
+    #black-button{
+        margin-left: 50px;
+    }
+    #Reaction-Card{
+        width: 200px;
+    }
+    #Visual-Card{
+        width: 200px;
+    }
+    #Memory-Card{
+        width: 200px;
+    }
+    #Verbal-Card{
+        width: 200px;
+    }
+    .Reaction-ml{
+        margin-left: 38px;
+    }
+    .Memory-ml{
+        margin-left: 40px;
+    }
+    .Verbal-ml{
+        margin-left: 52px;
+    }
+    .Visual-ml{
+        margin-left: 55px;
+    }
+}
